@@ -1,0 +1,4 @@
+node modules/
+.expo/
+
+.DS_Store
