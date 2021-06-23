@@ -8,9 +8,8 @@ import {
 } from '@expo-google-fonts/rajdhani';
 import AppLoading from 'expo-app-loading';
 
-import SignIn from './src/screens/SignIn';
-import Home from './src/screens/Home'
 import { theme } from './src/global/styles/theme';
+import Routes from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -26,11 +25,11 @@ export default function App() {
 
   return (
     <>
-     <StatusBar
+      <StatusBar
         barStyle="light-content"
         backgroundColor={theme.colors.background}
       />
-      <Home />
+      <Routes />
     </>
   );
 }
