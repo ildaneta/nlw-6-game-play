@@ -5,7 +5,7 @@ import { styles } from './styles';
 
 import AvatarIMG from '../../assets/ilda.jpeg';
 
-const Avatar = () => {
+const Avatar = (): JSX.Element => {
   return (
     <View style={styles.container}>
       <Image
