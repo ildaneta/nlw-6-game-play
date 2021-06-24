@@ -2,8 +2,11 @@ export const theme = {
   colors: {
     background: '#2F3136',
     heading: '#DDE3F0',
+    headingWhite: '#f1f1f1',
     highlight: '#ABB1CC',
     primary: '#1B1B1D',
+    primaryDark: '#111',
+    borderWhite: '#f2f2f2',
     line: '#000',
     on: '#32BD50',
     overlay: 'rgba(0,0,0,0.7)'
