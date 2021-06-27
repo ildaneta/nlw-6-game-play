@@ -10,11 +10,13 @@ import { styles } from './styles';
 type CategorySelectProps = {
   categorySelected: string;
   setCategory: (categoryId: string) => void;
+  hasCheckBox?: boolean;
 };
 
 const CategorySelect = ({
   categorySelected,
   setCategory,
+  hasCheckBox = false,
 }: CategorySelectProps): JSX.Element => {
   return (
     <ScrollView
@@ -29,6 +31,7 @@ const CategorySelect = ({
           icon={category.icon}
           checked={category.id === categorySelected ? true : false}
           onPress={() => setCategory(category.id)}
+          hasCheckBox
         />
       ))}
     </ScrollView>
