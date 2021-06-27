@@ -9,12 +9,14 @@ interface ICategoryProps extends RectButtonProperties {
   title: string;
   icon: React.FC<SvgProps>;
   checked?: boolean;
+  hasCheckBox?: boolean;
 }
 
 const Category = ({
   title,
   icon: Icon,
   checked = true,
+  hasCheckBox = false,
   ...rest
 }: ICategoryProps): JSX.Element => {
   return (
@@ -23,9 +25,11 @@ const Category = ({
         style={[
           styles.content,
           { opacity: checked ? 1 : 0.4 },
-          checked ? styles.contentChecked : '',
+          checked ? styles.contentChecked : styles.content,
         ]}>
-        <View style={checked ? styles.checked : styles.check} />
+        {hasCheckBox && (
+          <View style={checked ? styles.checked : styles.check} />
+        )}
 
         <Icon width={48} height={48} />
 
