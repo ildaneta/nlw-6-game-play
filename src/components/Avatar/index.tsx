@@ -3,15 +3,14 @@ import { View, Image } from 'react-native';
 
 import { styles } from './styles';
 
-import AvatarIMG from '../../assets/ilda.jpeg';
+export type AvatarProps = {
+  urlImage: string;
+};
 
-const Avatar = (): JSX.Element => {
+const Avatar = ({ urlImage }: AvatarProps): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: 'https://github.com/ildaneta.png' }}
-        style={styles.image}
-      />
+      <Image source={{ uri: urlImage }} style={styles.image} />
     </View>
   );
 };
