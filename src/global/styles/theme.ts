@@ -6,10 +6,12 @@ export const theme = {
     highlight: '#ABB1CC',
     primary: '#1B1B1D',
     primaryDark: '#111',
+    secondaryDark: '#333',
     secondary: '#f26',
     borderWhite: '#f2f2f2',
     line: '#000',
     on: '#32BD50',
+    off: '#E51C44',
     overlay: 'rgba(0,0,0,0.7)'
   },
 
