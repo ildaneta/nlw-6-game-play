@@ -26,7 +26,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     color: theme.colors.heading,
     fontSize: 15,
-    textAlign: AlignTypes.center
+    textAlign: AlignTypes.center,
+    fontFamily: theme.fonts.text500
   }, 
 
   icon: {
