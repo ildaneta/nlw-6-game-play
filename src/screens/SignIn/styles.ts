@@ -10,14 +10,15 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.background,
     flex: 1,
   },
-
+  
   image: {
     width: '100%',
     height: 360
   },
-
+  
   content: {
-    marginTop: -40
+    marginTop: -40,
+    marginHorizontal: 24
   },
 
   title: {
