@@ -8,7 +8,7 @@ import { styles } from './styles';
 const Profile = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Avatar />
+      <Avatar urlImage="https://github.com/ildaneta.png" />
 
       <View>
         <View style={styles.user}>
