@@ -1,6 +1,10 @@
 # Game Play
 
-React Native project created by NLW6 - Rocketseat
+<img width="500" alt="SignIn" src="https://user-images.githubusercontent.com/21963291/123958738-c8ef4800-d983-11eb-9f01-9b6d01bd8605.png">
+
+<img width="500" alt="Home" src="https://user-images.githubusercontent.com/21963291/123958752-cdb3fc00-d983-11eb-927f-cd4914e3fd74.png">
+
+<img width="500" alt="Schedulling a game" src="https://user-images.githubusercontent.com/21963291/123958758-d0165600-d983-11eb-9732-6522933727c1.png">
 
 ## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
