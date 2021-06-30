@@ -9,7 +9,9 @@ import {
 } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
+import Guilds from '../Guilds';
 
+import ModalView from '../../components/ModalView';
 import Header from '../../components/Header';
 import CategorySelect from '../../components/CategorySelect';
 import GuildIcon from '../../components/GuildIcon';
@@ -19,11 +21,23 @@ import Button from '../../components/Button';
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
+import { GuildProps } from '../../components/Guild';
 
 const AppointmentCreate = (): JSX.Element => {
   const navigation = useNavigation();
 
   const [category, setCategory] = useState('');
+  const [isModalVisible, setModalVisible] = useState(false);
+  const [guildSelected, setGuildSelected] = useState<GuildProps>(
+    {} as GuildProps,
+  );
+
+  const handleOpenGuilds = () => setModalVisible(true);
+
+  const handleGuildSelected = (guildSelect: GuildProps) => {
+    setGuildSelected(guildSelect);
+    setModalVisible(false);
+  };
 
   return (
     <KeyboardAvoidingView
@@ -48,15 +62,20 @@ const AppointmentCreate = (): JSX.Element => {
           />
 
           <View style={styles.form}>
-            <RectButton>
+            <RectButton onPress={handleOpenGuilds}>
               <View style={styles.select}>
-                {
+                {guildSelected.icon ? (
                   <GuildIcon />
-                  // <View style={styles.image} />
-                }
+                ) : (
+                  <View style={styles.image} />
+                )}
 
                 <View style={styles.selectBody}>
-                  <Text style={styles.label}>Selecione um Servidor</Text>
+                  <Text style={styles.label}>
+                    {guildSelected.name
+                      ? guildSelected.name
+                      : 'Selecione um servidor'}
+                  </Text>
                 </View>
 
                 <Feather
@@ -113,6 +132,9 @@ const AppointmentCreate = (): JSX.Element => {
           </View>
         </View>
       </ScrollView>
+      <ModalView visible={isModalVisible}>
+        <Guilds handleGuildSelected={handleGuildSelected} />
+      </ModalView>
     </KeyboardAvoidingView>
   );
 };
