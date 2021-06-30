@@ -31,7 +31,7 @@ const CategorySelect = ({
           icon={category.icon}
           checked={category.id === categorySelected ? true : false}
           onPress={() => setCategory(category.id)}
-          hasCheckBox
+          hasCheckBox={hasCheckBox}
         />
       ))}
     </ScrollView>
