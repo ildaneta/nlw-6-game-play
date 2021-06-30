@@ -9,7 +9,7 @@
 ## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
 - [Motivation](#pushpin-motivation)
-- [How to download the project and build it?](#computer-how-to-download-the-project-and-build-it-?)
+- [How to download the project and build it?](#computer-how-to-download-the-project-and-run-it)
 - [Original Layout](#page_with_curl-original-layout)
 - [License](#scroll-license)
 - [Author](#pencil-author)
@@ -20,7 +20,7 @@ This project was created watching the Next Level Week from Rocketseat.
 
 I chose the dar mode to develop the entire application, considering the usability and experience of the users.
 
-## :computer: How to download the project and run it?
+## :computer: How to download the project and run it
 
 - Clone the project for your pc usign SSH
 
