@@ -40,7 +40,7 @@ $ expo start
 
 ## :page_with_curl: Original layout
 
-- For view the original layout, you can clik on this [figma link.](<https://www.figma.com/file/h6qIOUQHTnt8pH07JmbRok/GamePlay---NLW-Together-(Copy)?node-id=58913%3A83>)
+- For view the original layout, you can click on this [figma link.](<https://www.figma.com/file/h6qIOUQHTnt8pH07JmbRok/GamePlay---NLW-Together-(Copy)?node-id=58913%3A83>)
 
 ## :scroll: License
 
