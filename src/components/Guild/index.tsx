@@ -1,7 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacityProps,
+  TouchableOpacity,
+} from 'react-native';
 
-// import { Container } from './styles';\
+import GuildIcon from '../GuildIcon';
+
+import { styles } from './styles';
 
 export type GuildProps = {
   id: string;
@@ -10,8 +17,22 @@ export type GuildProps = {
   owner: boolean;
 };
 
-const Guild = (): JSX.Element => {
-  return <View />;
+interface GuildData extends TouchableOpacityProps {
+  data: GuildProps;
+}
+
+const Guild = ({ data, ...rest }: GuildData): JSX.Element => {
+  return (
+    <TouchableOpacity style={styles.container} activeOpacity={0.7} {...rest}>
+      <GuildIcon />
+
+      <View style={styles.content}>
+        <View>
+          <Text style={styles.title}>{data.name}</Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  );
 };
 
 export default Guild;
