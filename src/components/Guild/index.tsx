@@ -5,10 +5,12 @@ import {
   TouchableOpacityProps,
   TouchableOpacity,
 } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
 import GuildIcon from '../GuildIcon';
 
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export type GuildProps = {
   id: string;
@@ -27,10 +29,13 @@ const Guild = ({ data, ...rest }: GuildData): JSX.Element => {
       <GuildIcon />
 
       <View style={styles.content}>
-        <View>
-          <Text style={styles.title}>{data.name}</Text>
-        </View>
+        <Text style={styles.title}>{data.name}</Text>
+        <Text style={styles.type}>
+          {data.owner ? 'Administrador' : 'Convidado'}
+        </Text>
       </View>
+
+      <Feather name="chevron-right" color={theme.colors.heading} size={24} />
     </TouchableOpacity>
   );
 };
