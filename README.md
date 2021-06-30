@@ -18,7 +18,9 @@
 
 This project was created watching the Next Level Week from Rocketseat.
 
-I chose the dar mode to develop the entire application, considering the usability and experience of the users.
+I chose the dark mode to develop the entire application, considering the usability and experience of the users.
+
+With Game play application you can signIn using the discord account and schedule score game matches with your friends.
 
 ## :computer: How to download the project and run it
 
