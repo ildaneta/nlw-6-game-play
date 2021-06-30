@@ -4,7 +4,7 @@
 
 <img width="500" alt="Home" src="https://user-images.githubusercontent.com/21963291/123958752-cdb3fc00-d983-11eb-927f-cd4914e3fd74.png">
 
-<img width="500" alt="Schedulling a game" src="https://user-images.githubusercontent.com/21963291/123958758-d0165600-d983-11eb-9732-6522933727c1.png">
+<img width="600" alt="Schedulling a game" src="https://user-images.githubusercontent.com/21963291/123958758-d0165600-d983-11eb-9732-6522933727c1.png">
 
 ## ![image](https://user-images.githubusercontent.com/21963291/85338764-45ba2d00-b4b9-11ea-921a-d15eb692b2ea.png) Menu Contents
 
@@ -20,7 +20,7 @@ This project was created watching the Next Level Week from Rocketseat.
 
 I chose the dar mode to develop the entire application, considering the usability and experience of the users.
 
-## :computer: How to download the project and build it?
+## :computer: How to download the project and run it?
 
 - Clone the project for your pc usign SSH
 
