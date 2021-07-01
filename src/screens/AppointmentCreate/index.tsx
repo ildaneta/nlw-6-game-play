@@ -34,9 +34,19 @@ const AppointmentCreate = (): JSX.Element => {
 
   const handleOpenGuilds = () => setModalVisible(true);
 
+  const handleCloseModal = () => setModalVisible(false);
+
   const handleGuildSelected = (guildSelect: GuildProps) => {
     setGuildSelected(guildSelect);
     setModalVisible(false);
+  };
+
+  const handleCategorySelect = (categoryId: string) => {
+    if (categoryId === category) {
+      setCategory('');
+    } else {
+      setCategory(categoryId);
+    }
   };
 
   return (
@@ -58,7 +68,7 @@ const AppointmentCreate = (): JSX.Element => {
           <CategorySelect
             hasCheckBox
             categorySelected={category}
-            setCategory={setCategory}
+            setCategory={handleCategorySelect}
           />
 
           <View style={styles.form}>
@@ -115,15 +125,14 @@ const AppointmentCreate = (): JSX.Element => {
             <View style={[styles.field, { marginBottom: 12 }]}>
               <Text style={styles.label}>Descrição</Text>
 
-              <Text style={styles.caracteresLimit}>Max 100 caracteres</Text>
+              <Text style={styles.caracteresLimit}>Max 200 caracteres</Text>
             </View>
 
             <TextArea
               multiline
-              maxLength={100}
+              maxLength={200}
               numberOfLines={5}
               autoCorrect={false}
-              textAlign="center"
             />
 
             <View style={styles.footer}>
@@ -132,7 +141,7 @@ const AppointmentCreate = (): JSX.Element => {
           </View>
         </View>
       </ScrollView>
-      <ModalView visible={isModalVisible}>
+      <ModalView visible={isModalVisible} closeModal={handleCloseModal}>
         <Guilds handleGuildSelected={handleGuildSelected} />
       </ModalView>
     </KeyboardAvoidingView>
