@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     color: theme.colors.heading,
     paddingLeft: 24,
     paddingRight: 24,
+    lineHeight: 21
   },
 
   members: {
