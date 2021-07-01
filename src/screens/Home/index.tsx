@@ -58,29 +58,28 @@ const Home = (): JSX.Element => {
         <ButtonAdd onPress={() => navigation.navigate('AppointmentCreate')} />
       </View>
 
-      <View>
-        <CategorySelect
-          categorySelected={category}
-          setCategory={handleCategorySelect}
-        />
+      <CategorySelect
+        categorySelected={category}
+        setCategory={handleCategorySelect}
+      />
 
-        <View style={styles.content}>
-          <ListHeader title="Partidas agendadas" subtitle="Total de 6" />
-
-          <FlatList
-            style={styles.matches}
-            showsVerticalScrollIndicator={false}
-            data={appointments}
-            keyExtractor={item => item.id}
-            renderItem={({ item }) => (
-              <Appointment
-                data={item}
-                onPress={() => navigation.navigate('AppointmentDetail')}
-              />
-            )}
-          />
-        </View>
+      <View style={styles.content}>
+        <ListHeader title="Partidas agendadas" subtitle="Total de 6" />
       </View>
+
+      <FlatList
+        style={styles.matches}
+        contentContainerStyle={{ paddingBottom: 30 }}
+        showsVerticalScrollIndicator={false}
+        data={appointments}
+        keyExtractor={item => item.id}
+        renderItem={({ item }) => (
+          <Appointment
+            data={item}
+            onPress={() => navigation.navigate('AppointmentDetail')}
+          />
+        )}
+      />
     </View>
   );
 };
