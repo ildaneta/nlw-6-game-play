@@ -13,10 +13,10 @@ export const styles = StyleSheet.create({
   },
 
   line: {
-    borderColor: theme.colors.highlight,
+    borderColor: theme.colors.lineGray,
     borderWidth: 0.5,
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 10,
+    marginBottom: 10,
     marginLeft: 108
   }
 });
