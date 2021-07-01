@@ -14,8 +14,7 @@ export const styles = StyleSheet.create({
     marginRight: 4,
     borderColor: theme.colors.line,
     borderWidth: 1,
-    padding: 5,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start'
+    padding: 16,
+    textAlignVertical: 'top',
   }
 })
