@@ -10,6 +10,7 @@ export const theme = {
     secondary: '#f26',
     borderWhite: '#f2f2f2',
     line: '#000',
+    lineGray: '#4f4c4c',
     on: '#32BD50',
     off: '#E51C44',
     overlay: 'rgba(0,0,0,0.7)',
