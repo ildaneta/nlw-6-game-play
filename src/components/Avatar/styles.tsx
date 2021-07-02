@@ -14,8 +14,8 @@ export const styles = StyleSheet.create({
   },
 
   image: {
-    width: 46,
-    height: 46,
+    width: 48.5,
+    height: 48.5,
     borderRadius: 8,
   },
 });
